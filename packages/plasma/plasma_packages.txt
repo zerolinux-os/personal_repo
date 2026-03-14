@@ -1,0 +1,83 @@
+# KDE Plasma Core
+plasma-desktop
+plasma-workspace
+plasma-meta
+kwin
+kwin-x11
+kwin-wayland
+
+# Display Manager
+sddm
+sddm-kcm
+qt5-declarative
+
+# KDE Applications
+dolphin
+konsole
+kate
+kwrite
+krunner
+kscreen
+kinfocenter
+ksystemstats
+spectacle
+gwenview
+okular
+ark
+elisa
+kdeconnect
+plasma-nm
+plasma-pa
+plasma-firewall
+plasma-browser-integration
+plasma-systemmonitor
+plasma-disks
+plasma-vault
+kwalletmanager
+kgpg
+
+# KDE System
+polkit-kde-agent
+kde-gtk-config
+breeze
+breeze-gtk
+breeze-icons
+oxygen
+hicolor-icon-theme
+
+# Wayland Support
+plasma-wayland-session
+xorg-xwayland
+qt5-wayland
+qt6-wayland
+
+# XOrg Fallback
+xorg-server
+xorg-xinit
+xorg-xrandr
+xf86-input-libinput
+
+# Fonts
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ttf-hack-nerd
+ttf-jetbrains-mono
+ttf-liberation
+ttf-dejavu
+ttf-roboto
+ttf-ubuntu-font-family
+
+# Multimedia
+phonon-qt5-gstreamer
+gstreamer
+gst-plugins-base
+gst-plugins-good
+gst-plugins-bad
+gst-plugins-ugly
+gst-libav
+vlc
+mpv
+
+# Themes Extra
+kvantum

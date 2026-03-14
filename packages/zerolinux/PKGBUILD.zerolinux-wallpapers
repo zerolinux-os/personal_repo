@@ -1,0 +1,20 @@
+pkgname=zerolinux-wallpapers
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="ZeroLinux-OS official wallpapers"
+arch=('any')
+license=('CC-BY-SA-4.0')
+depends=()
+makedepends=(git)
+
+source=(
+    "zerolinux-wallpapers::git+https://github.com/YOUR_USERNAME/zerolinux-wallpapers.git"
+)
+sha256sums=('SKIP')
+
+package() {
+    install -dm755 "$pkgdir/usr/share/wallpapers/ZeroLinux"
+    find "$srcdir/zerolinux-wallpapers" \
+        -maxdepth 1 \( -name "*.jpg" -o -name "*.png" \) \
+        -exec install -Dm644 {} "$pkgdir/usr/share/wallpapers/ZeroLinux/" \;
+}

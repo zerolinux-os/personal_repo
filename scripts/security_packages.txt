@@ -1,0 +1,128 @@
+# ============================================================
+# ZeroLinux - Cybersecurity & Ethical Hacking Tools
+# ============================================================
+# أدوات الأمن المعلوماتي والاختراق الأخلاقي
+
+# --- Network Scanning & Discovery ---
+nmap
+masscan
+rustscan
+arp-scan
+netdiscover
+angry-ip-scanner-bin
+zmap
+
+# --- Vulnerability Assessment ---
+openvas
+nikto
+sqlmap
+wpscan
+nuclei-bin
+trivy
+
+# --- Password & Cracking ---
+john
+hashcat
+hydra
+medusa
+crunch
+wordlists
+seclists-git
+hashid
+ophcrack
+
+# --- Web Application Testing ---
+burpsuite
+owasp-zap
+gobuster
+ffuf
+dirb
+dirsearch
+wfuzz
+whatweb
+wafw00f
+
+# --- Exploitation ---
+metasploit
+exploitdb
+pwntools
+ropper
+
+# --- Wireless Security ---
+aircrack-ng
+kismet
+reaver
+bully
+pixiewps
+hostapd-wpe
+wifite2
+bettercap
+
+# --- Forensics & Analysis ---
+autopsy
+sleuthkit
+volatility3
+binwalk
+foremost
+testdisk
+photorec
+scalpel
+bulk-extractor
+hexedit
+ghidra-bin
+cutter
+
+# --- Reverse Engineering ---
+radare2
+r2ghidra
+gdb-multiarch
+pwndbg
+peda
+rizin
+
+# --- Sniffing & Interception ---
+wireshark-qt
+tcpdump
+ettercap
+mitmproxy
+responder-git
+sslstrip
+dsniff
+
+# --- Steganography ---
+steghide
+stegseek-git
+zsteg
+exiftool
+binwalk
+
+# --- OSINT ---
+maltego
+spiderfoot-git
+recon-ng
+theHarvester
+sherlock-git
+whois
+whatismyip
+
+# --- Anonymity & Tunneling ---
+tor
+proxychains-ng
+openvpn
+wireguard-tools
+i2p
+
+# --- Monitoring & IDS ---
+snort
+suricata
+zeek
+fail2ban
+ossec-hids
+
+# --- CTF Tools ---
+pwndbg
+one_gadget
+ROPgadget
+checksec
+angr
+z3

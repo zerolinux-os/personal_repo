@@ -1,0 +1,72 @@
+# Build Essentials
+base-devel
+gcc
+clang
+llvm
+cmake
+make
+ninja
+meson
+gdb
+valgrind
+
+# Version Control
+git
+git-lfs
+lazygit
+
+# Python
+python
+python-pip
+python-virtualenv
+ipython
+python-numpy
+python-pandas
+python-requests
+python-flask
+python-fastapi
+
+# Node.js
+nodejs
+npm
+yarn
+
+# Rust
+rust
+cargo
+
+# Go
+go
+
+# Java
+jdk-openjdk
+maven
+
+# Containers
+docker
+docker-compose
+podman
+
+# Editors
+neovim
+vim
+code
+
+# Terminal Dev Tools
+tmux
+fzf
+ripgrep
+fd
+bat
+eza
+jq
+yq
+zoxide
+starship
+direnv
+
+# API & Network
+wireshark-qt
+tcpdump
+nmap
+socat

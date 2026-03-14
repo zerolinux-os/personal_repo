@@ -1,0 +1,20 @@
+# ============================================================
+# ZeroLinux - إعداد pacman.conf
+# ============================================================
+# أضف هذا المقطع في نهاية /etc/pacman.conf
+# ============================================================
+
+# ========== [اختياري] تفعيل multilib ==========
+# [multilib]
+# Include = /etc/pacman.d/mirrorlist
+
+# ========== ZeroLinux Personal Repository ==========
+# للاستخدام المحلي (بعد بناء المستودع):
+[zero]
+SigLevel = Optional TrustAll
+Server = file:///home/zerolinux-os/personal_repo/x86_64
+
+# للاستخدام عبر GitHub (بعد الرفع):
+# [zero]
+# SigLevel = Optional TrustAll
+# Server = https://raw.githubusercontent.com/zerolinux-os/ZeroLinux/main/x86_64

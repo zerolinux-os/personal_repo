@@ -1,0 +1,34 @@
+# ============================================================
+# ZeroLinux - Browsers
+# ============================================================
+# المتصفحات الشهيرة
+
+# --- Chromium-based ---
+chromium
+google-chrome-stable
+microsoft-edge-stable-bin
+brave-bin
+vivaldi
+opera-beta
+
+# --- Firefox-based ---
+firefox
+firefox-developer-edition
+librewolf-bin
+waterfox-current-bin
+floorp-bin
+
+# --- Privacy-focused ---
+tor-browser-bin
+mullvad-browser-bin
+
+# --- Lightweight ---
+qutebrowser
+falkon
+midori
+lynx
+links
+w3m
+
+# --- Extensions/Addons (via package) ---
+firefox-ublock-origin

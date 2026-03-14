@@ -1,0 +1,84 @@
+# Compression
+zip
+unzip
+p7zip
+unrar
+tar
+gzip
+bzip2
+xz
+zstd
+
+# File Management
+ranger
+yazi
+mc
+krusader
+
+# Disk Management
+gparted
+partitionmanager
+smartmontools
+ncdu
+duf
+
+# System Monitoring
+htop
+btop
+glances
+neofetch
+fastfetch
+inxi
+
+# Network
+openssh
+rsync
+wget
+curl
+aria2
+net-tools
+iproute2
+traceroute
+mtr
+iperf3
+
+# Screenshot
+spectacle
+flameshot
+obs-studio
+
+# Documents
+libreoffice-fresh
+okular
+evince
+
+# Image Editing
+gimp
+inkscape
+krita
+
+# Password Manager
+keepassxc
+
+# Backup
+timeshift
+restic
+
+# Sound
+pipewire
+pipewire-alsa
+pipewire-pulse
+wireplumber
+pavucontrol
+
+# Bluetooth
+bluez
+bluez-utils
+bluedevil
+
+# Printing
+cups
+system-config-printer
+
+# Package Managers Extra
+flatpak

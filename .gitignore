@@ -1,0 +1,28 @@
+# ملفات مؤقتة
+*.tmp
+*.bak
+*.swp
+*~
+
+# مجلدات البناء
+.cache/
+build/
+*.src.tar.gz
+
+# سجلات
+logs/
+*.log
+
+# ملفات حساسة
+*.key
+*.gpg
+secrets/
+
+# حزم كبيرة (استخدم Git LFS بدلاً منها)
+*.pkg.tar.zst
+*.pkg.tar.xz
+*.pkg.tar.gz
+
+# ملفات النظام
+.DS_Store
+Thumbs.db

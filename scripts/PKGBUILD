@@ -1,0 +1,113 @@
+# Maintainer: ZeroLinux Team <team@zerolinux.org>
+# Contributor: ZeroLinux Development <dev@zerolinux.org>
+
+pkgname=calamares-zerolinux
+pkgver=3.3.14
+pkgrel=1
+pkgdesc="ZeroLinux Distribution Installer - نظام التثبيت الخاص بـ ZeroLinux"
+arch=('x86_64')
+url="https://github.com/yourusername/ZeroLinux"
+license=('GPL3')
+depends=(
+    'kconfig'
+    'kcoreaddons'
+    'kcrash'
+    'ki18n'
+    'kpackage'
+    'kpmcore'
+    'kservice'
+    'kwidgetsaddons'
+    'qt5-base'
+    'qt5-declarative'
+    'qt5-location'
+    'qt5-svg'
+    'qt5-webengine'
+    'qt5-xmlpatterns'
+    'boost-libs'
+    'hwinfo'
+    'icu'
+    'libpwquality'
+    'parted'
+    'polkit-qt5'
+    'python'
+    'python-yaml'
+    'python-jsonschema'
+    'squashfs-tools'
+    'yaml-cpp'
+    'cryptsetup'
+    'dosfstools'
+    'e2fsprogs'
+    'grub'
+    'os-prober'
+    'networkmanager'
+)
+makedepends=(
+    'cmake'
+    'extra-cmake-modules'
+    'git'
+    'ninja'
+    'qt5-tools'
+)
+optdepends=(
+    'bash-completion: زيادة اكتمال النصوص في الطرفية'
+    'efibootmgr: دعم نظام UEFI'
+    'grub: مدير تمهيد النظام'
+    'mtools: أدوات FAT'
+    'squashfs-tools: بناء صور squashfs'
+)
+provides=('calamares')
+conflicts=('calamares' 'calamares-git')
+replaces=('calamares')
+source=(
+    "calamares-${pkgver}.tar.gz::https://github.com/calamares/calamares/archive/v${pkgver}.tar.gz"
+    "zerolinux-branding.tar.gz::https://github.com/yourusername/ZeroLinux/releases/download/v1.0/zerolinux-branding.tar.gz"
+    "zerolinux.conf"
+    "settings.conf"
+)
+sha256sums=(
+    'SKIP'
+    'SKIP'
+    'SKIP'
+    'SKIP'
+)
+
+prepare() {
+    cd "calamares-${pkgver}"
+    # تطبيق هوية ZeroLinux
+    cp -r "${srcdir}/zerolinux-branding" "src/branding/zerolinux"
+    # تطبيق التعديلات الخاصة بـ ZeroLinux
+    patch -Np1 < "${startdir}/patches/zerolinux-welcome.patch" 2>/dev/null || true
+}
+
+build() {
+    cmake -S "calamares-${pkgver}" \
+          -B build \
+          -G Ninja \
+          -DCMAKE_BUILD_TYPE=Release \
+          -DCMAKE_INSTALL_PREFIX=/usr \
+          -DCMAKE_INSTALL_LIBDIR=lib \
+          -DCMAKE_INSTALL_LIBEXECDIR=lib \
+          -DWITH_QT5=ON \
+          -DWITH_APPSTREAM=OFF \
+          -DSKIP_MODULES="tracking webview" \
+          -DWITH_PYTHONQT=OFF \
+          -DWEBVIEW_FORCE_WEBKIT=OFF
+    ninja -C build
+}
+
+package() {
+    DESTDIR="${pkgdir}" ninja -C build install
+
+    # نسخ ملفات الإعداد الخاصة بـ ZeroLinux
+    install -Dm644 "${srcdir}/zerolinux.conf" \
+        "${pkgdir}/etc/calamares/modules/zerolinux.conf"
+    install -Dm644 "${srcdir}/settings.conf" \
+        "${pkgdir}/etc/calamares/settings.conf"
+
+    # تثبيت ملف الـ Polkit
+    install -Dm644 "${pkgdir}/usr/share/polkit-1/actions/org.kde.calamares.policy" \
+        "${pkgdir}/usr/share/polkit-1/actions/org.kde.calamares.policy"
+
+    # إنشاء رابط رمزي للتشغيل
+    ln -sf /usr/bin/calamares "${pkgdir}/usr/bin/zerolinux-installer"
+}

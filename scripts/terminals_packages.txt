@@ -1,0 +1,51 @@
+# ============================================================
+# ZeroLinux - Terminal Emulators
+# ============================================================
+# الطرفيات الشهيرة
+
+# --- GPU Accelerated ---
+alacritty
+kitty
+wezterm-bin
+rio-bin
+
+# --- KDE Native ---
+konsole
+yakuake
+
+# --- GNOME Native ---
+gnome-terminal
+
+# --- Feature-rich ---
+tilix
+terminator
+xfce4-terminal
+lxterminal
+cool-retro-term
+
+# --- Minimalist ---
+rxvt-unicode
+st-luke-git
+xterm
+
+# --- Web-based ---
+hyper-bin
+
+# --- Shells ---
+bash
+zsh
+fish
+nushell
+xonsh
+
+# --- Shell Frameworks & Plugins ---
+oh-my-zsh-git
+zsh-autosuggestions
+zsh-syntax-highlighting
+zsh-completions
+starship
+
+# --- Multiplexers ---
+tmux
+zellij
+screen

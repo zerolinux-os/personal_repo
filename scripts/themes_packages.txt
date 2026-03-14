@@ -1,0 +1,58 @@
+# ============================================================
+# ZeroLinux - Themes, Icons & Cursors
+# ============================================================
+# الثيمات، الأيقونات والمؤشرات
+
+# --- GTK Themes ---
+arc-gtk-theme
+materia-gtk-theme
+kvantum-theme-materia
+papirus-icon-theme-git
+colloid-gtk-theme-git
+graphite-gtk-theme-git
+orchis-theme-git
+catppuccin-gtk-theme-mocha
+
+# --- KDE / Plasma Themes ---
+plasma5-themes-lightly-git
+klassy-git
+otto-kde-git
+mcmojave-kde-theme-git
+sweet-kde-theme-git
+nordic-darker-kde-theme-git
+
+# --- Icon Themes ---
+papirus-icon-theme
+tela-icon-theme-git
+McMojave-circle-icon-theme-git
+WhiteSur-icon-theme-git
+fluent-icon-theme-git
+reversal-icon-theme-git
+
+# --- Cursor Themes ---
+xcursor-breeze
+bibata-cursor-theme-bin
+volantes-cursors-git
+oreo-cursors-git
+simp1e-cursors-git
+sweet-cursor-theme-git
+
+# --- Wallpapers ---
+plasma5-wallpapers-dynamic
+wallutils
+
+# --- SDDM Themes ---
+sddm-theme-sugar-candy-git
+sddm-theme-catppuccin-git
+sddm-theme-astronaut-git
+sddm-theme-corners-git
+
+# --- Qt/KDE Styling ---
+qt5ct
+qt6ct
+kvantum
+kvantum-qt5
+lightly-qt-git
+
+# --- Color Schemes ---
+catppuccin-color-schemes-git

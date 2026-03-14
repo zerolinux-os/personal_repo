@@ -1,0 +1,15 @@
+# Chromium-based
+chromium
+brave-bin
+
+# Firefox-based
+firefox
+firefox-developer-edition
+librewolf-bin
+
+# Privacy
+tor-browser-bin
+
+# Lightweight
+qutebrowser
+lynx

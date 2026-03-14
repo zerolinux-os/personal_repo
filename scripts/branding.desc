@@ -1,0 +1,46 @@
+# ============================================================
+# ZeroLinux - Calamares Branding Configuration
+# ============================================================
+
+componentName: zerolinux
+
+# ---- المعلومات الظاهرة في المثبّت ----
+strings:
+  productName:          "ZeroLinux"
+  version:              "1.0"
+  shortVersion:         "1.0"
+  versionedName:        "ZeroLinux 1.0"
+  shortVersionedName:   "ZeroLinux 1.0"
+  bootloaderEntryName:  "ZeroLinux"
+  productUrl:           "https://github.com/yourusername/ZeroLinux"
+  supportUrl:           "https://github.com/yourusername/ZeroLinux/issues"
+  releaseNotesUrl:      "https://github.com/yourusername/ZeroLinux/releases"
+  knownIssuesUrl:       "https://github.com/yourusername/ZeroLinux/issues"
+
+# ---- الصور والأيقونات ----
+images:
+  # شعار الـ sidebar (SVG أو PNG بحجم 80x80)
+  productLogo: "logo.png"
+  # أيقونة نافذة المثبّت
+  productIcon: "icon.png"
+  # صورة خلفية نافذة الترحيب (1600x900 أو أكبر)
+  productWelcome: "languages.png"
+
+# ---- الألوان ----
+palette:
+  # لون السطر الجانبي
+  sidebarBackground:     "#1a1b2e"
+  # لون نص السطر الجانبي
+  sidebarText:           "#c8c8d4"
+  # لون العنصر المحدد في السطر الجانبي
+  sidebarTextSelect:     "#ffffff"
+  # لون خلفية العنصر المحدد
+  sidebarTextHighlight:  "#4361ee"
+
+# ---- إعدادات النافذة ----
+slideshow: "show.qml"
+slideshowAPI: 2
+
+# ---- إعدادات الـ Welcome ----
+welcomeStyleCalamares: false
+welcomeExpandingLogo: true

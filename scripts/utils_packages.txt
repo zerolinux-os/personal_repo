@@ -1,0 +1,185 @@
+# ============================================================
+# ZeroLinux - System Utilities
+# ============================================================
+# الأدوات المساعدة
+
+# --- Compression / Archive ---
+zip
+unzip
+p7zip
+p7zip-plugins
+unrar
+tar
+gzip
+bzip2
+xz
+lz4
+zstd
+lzop
+pigz
+pbzip2
+arj
+lhasa
+cabextract
+
+# --- File Management ---
+ranger
+nnn
+yazi
+vifm
+mc
+thunar
+pcmanfm-qt
+nemo
+spacefm-git
+
+# --- Disk Management ---
+gparted
+partitionmanager
+gnome-disk-utility
+smartmontools
+hdparm
+nvme-cli
+lsblk
+ncdu
+dust
+duf
+
+# --- System Info & Monitoring ---
+htop
+btop
+bottom
+glances
+neofetch
+fastfetch
+inxi
+hwinfo
+lshw
+cpu-x
+hardinfo
+conky
+neofetch
+
+# --- Network Utilities ---
+networkmanager
+network-manager-applet
+nm-connection-editor
+openssh
+rsync
+wget
+curl
+aria2
+lftp
+samba
+nfs-utils
+avahi
+net-tools
+iproute2
+traceroute
+mtr
+whois
+bind-tools
+iperf3
+speedtest-cli
+bandwhich
+
+# --- Clipboard ---
+xclip
+xsel
+wl-clipboard
+copyq
+greenclip
+
+# --- Notifications ---
+libnotify
+dunst
+mako
+
+# --- Screenshot & Recording ---
+spectacle
+flameshot
+maim
+scrot
+obs-studio
+peek
+kooha
+grim
+slurp
+
+# --- Text & Document ---
+libreoffice-fresh
+libreoffice-fresh-ar
+onlyoffice-bin
+gedit
+mousepad
+xed
+micro
+nano
+
+# --- Image Editing ---
+gimp
+inkscape
+krita
+darktable
+rawtherapee
+nomacs
+
+# --- PDF ---
+okular
+evince
+zathura
+zathura-pdf-mupdf
+mupdf
+pdfgrep
+
+# --- Password Manager ---
+keepassxc
+bitwarden-bin
+
+# --- Backup ---
+timeshift
+restic
+vorta
+
+# --- System Tweak ---
+bleachbit
+stacer
+baobab
+filelight
+krusader
+
+# --- Printing ---
+cups
+cups-pdf
+system-config-printer
+hplip
+gutenprint
+
+# --- Bluetooth ---
+bluez
+bluez-utils
+bluedevil
+blueman
+
+# --- Sound ---
+pipewire
+pipewire-alsa
+pipewire-pulse
+wireplumber
+pavucontrol
+easyeffects
+qpwgraph
+
+# --- Virtualization (Optional) ---
+qemu-full
+libvirt
+virt-manager
+virtualbox
+virtualbox-host-modules-arch
+
+# --- Package Managers Extra ---
+flatpak
+snap
+appimage-daemon-git
+pamac-all
+octopi-git

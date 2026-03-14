@@ -1,0 +1,50 @@
+# Network Scanning
+nmap
+masscan
+arp-scan
+netdiscover
+
+# Web Testing
+nikto
+sqlmap
+gobuster
+ffuf
+whatweb
+
+# Password Cracking
+john
+hashcat
+hydra
+crunch
+
+# Wireless
+aircrack-ng
+kismet
+reaver
+hostapd
+
+# Forensics
+autopsy
+sleuthkit
+binwalk
+foremost
+testdisk
+hexedit
+
+# Reverse Engineering
+radare2
+gdb
+
+# Sniffing
+wireshark-qt
+tcpdump
+mitmproxy
+
+# Anonymity
+tor
+proxychains-ng
+openvpn
+wireguard-tools
+
+# Exploitation
+metasploit

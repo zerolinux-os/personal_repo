@@ -1,0 +1,46 @@
+pkgname=zerolinux-toolkit
+replaces=(zero-toolkit)
+conflicts=(zero-toolkit)
+provides=(zero-toolkit)
+pkgver=0.2.7
+pkgrel=1
+pkgdesc="ZeroLinux system toolkit - Rust + GTK4"
+arch=('x86_64')
+license=('GPL3')
+depends=(gtk4 glib2 libadwaita libdeflate)
+makedepends=()
+
+source=()
+sha256sums=()
+
+_srcdir="/opt/zero-toolkit"
+_bindir="$_srcdir"
+
+# لا build() — نستخدم binary مبني مسبقاً بـ cargo build --release
+package() {
+    # تأكد أن البناء موجود
+    [[ -f "$_bindir/zero-toolkit" ]] || {
+        echo "خطأ: شغّل أولاً: cd $_srcdir && LIBDEFLATE_SYS_USE_PKG_CONFIG=1 cargo build --release"
+        return 1
+    }
+
+    install -Dm755 "$_bindir/zero-toolkit" \
+        "$pkgdir/usr/bin/zero-toolkit"
+
+    install -Dm755 "$_bindir/zero-auth" \
+        "$pkgdir/usr/bin/zero-auth" 2>/dev/null || true
+
+    install -Dm644 /dev/stdin \
+        "$pkgdir/usr/share/applications/zero-toolkit.desktop" << 'DESK'
+[Desktop Entry]
+Name=Zero Toolkit
+Name[ar]=أدوات ZeroLinux
+GenericName=System Toolkit
+Comment=ZeroLinux-OS system management toolkit
+Exec=zero-toolkit
+Icon=zero-toolkit
+Terminal=false
+Type=Application
+Categories=System;Settings;GTK;
+DESK
+}

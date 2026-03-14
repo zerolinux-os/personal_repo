@@ -1,0 +1,41 @@
+pkgname=zerolinux-pkgmanager
+replaces=(zeropkgmanager)
+conflicts=(zeropkgmanager)
+provides=(zeropkgmanager)
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="ZeroLinux package manager - Rust + ALPM"
+arch=('x86_64')
+license=('GPL3')
+depends=(pacman gtk4 libadwaita)
+makedepends=()
+
+source=()
+sha256sums=()
+
+_srcdir="/home/zero/ZeroPkgManager"
+_bindir="$_srcdir/target/release"
+
+package() {
+    [[ -f "$_bindir/zeropkgmanager" ]] || {
+        echo "خطأ: شغّل أولاً: cd $_srcdir && cargo build --release"
+        return 1
+    }
+
+    install -Dm755 "$_bindir/zeropkgmanager" \
+        "$pkgdir/usr/bin/zeropkgmanager"
+
+    install -Dm644 /dev/stdin \
+        "$pkgdir/usr/share/applications/zeropkgmanager.desktop" << 'DESK'
+[Desktop Entry]
+Name=ZeroPkg Manager
+Name[ar]=مدير حزم ZeroLinux
+GenericName=Package Manager
+Comment=ZeroLinux-OS package manager
+Exec=zeropkgmanager
+Icon=zeropkgmanager
+Terminal=false
+Type=Application
+Categories=System;PackageManager;GTK;
+DESK
+}

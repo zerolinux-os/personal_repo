@@ -1,0 +1,27 @@
+# GPU Accelerated
+alacritty
+kitty
+wezterm-bin
+
+# KDE Native
+konsole
+yakuake
+
+# Feature-rich
+tilix
+xfce4-terminal
+
+# Shells
+bash
+zsh
+fish
+
+# Shell Plugins
+zsh-autosuggestions
+zsh-syntax-highlighting
+zsh-completions
+starship
+
+# Multiplexers
+tmux
+zellij

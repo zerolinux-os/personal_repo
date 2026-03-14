@@ -1,0 +1,22 @@
+# GTK Themes
+arc-gtk-theme
+materia-gtk-theme
+
+# Icons
+papirus-icon-theme
+tela-icon-theme-git
+
+# Cursors
+xcursor-breeze
+bibata-cursor-theme-bin
+
+# KDE Themes
+kvantum
+kvantum-theme-materia
+
+# SDDM Themes
+sddm-theme-sugar-candy-git
+
+# Qt Styling
+qt5ct
+qt6ct

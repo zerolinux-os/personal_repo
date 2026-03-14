@@ -1,0 +1,147 @@
+# ============================================================
+# ZeroLinux - Development & Programming Tools
+# ============================================================
+# أدوات البرمجة والتطوير الكاملة
+
+# --- Build Essentials ---
+base-devel
+gcc
+g++
+clang
+llvm
+cmake
+make
+ninja
+meson
+autoconf
+automake
+libtool
+pkg-config
+binutils
+gdb
+valgrind
+strace
+ltrace
+
+# --- Version Control ---
+git
+git-lfs
+lazygit
+tig
+gitui
+subversion
+mercurial
+
+# --- Python ---
+python
+python-pip
+python-setuptools
+python-wheel
+python-virtualenv
+python-poetry
+python-pipx
+ipython
+jupyter-notebook
+python-numpy
+python-pandas
+python-matplotlib
+python-scipy
+python-requests
+python-flask
+python-django
+python-fastapi
+
+# --- Node.js & JavaScript ---
+nodejs
+npm
+yarn
+pnpm
+
+# --- Rust ---
+rust
+cargo
+cargo-watch
+sccache
+
+# --- Go ---
+go
+gopls
+delve
+
+# --- Java & JVM ---
+jdk-openjdk
+jre-openjdk
+maven
+gradle
+kotlin
+scala
+
+# --- PHP ---
+php
+php-fpm
+composer
+
+# --- Ruby ---
+ruby
+ruby-bundler
+ruby-rake
+
+# --- Databases (Dev) ---
+sqlite
+postgresql
+mariadb
+redis
+mongodb-bin
+
+# --- Containers & DevOps ---
+docker
+docker-compose
+podman
+podman-compose
+kubectl
+helm
+terraform
+ansible
+vagrant
+
+# --- Editors & IDEs ---
+neovim
+vim
+emacs
+code
+vscodium-bin
+jetbrains-toolbox
+
+# --- Terminal Dev Tools ---
+tmux
+screen
+fzf
+ripgrep
+fd
+bat
+exa
+lsd
+delta
+httpie
+curlie
+jq
+yq
+xh
+direnv
+watchexec
+zoxide
+starship
+
+# --- API & Network Dev ---
+postman-bin
+insomnia-bin
+wireshark-qt
+tcpdump
+nmap
+netcat
+socat
+
+# --- Documentation ---
+doxygen
+pandoc
+mdbook

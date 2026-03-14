@@ -1,0 +1,46 @@
+# ============================================================
+# ZeroLinux .gitignore
+# ============================================================
+
+# ملفات الحزم (تُرفع عبر Git LFS)
+*.pkg.tar.zst
+*.pkg.tar.xz
+*.pkg.tar.gz
+*.pkg.tar.bz2
+
+# ملفات مؤقتة
+*.tmp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# مجلدات البناء المحلية
+.cache/
+build/
+src/
+pkg/
+*.src.tar.gz
+
+# سجلات البناء
+logs/
+*.log
+failed_packages.txt
+
+# ملفات حساسة
+*.key
+*.gpg
+*.pem
+secrets/
+.env
+
+# مجلد البيئة الافتراضية
+venv/
+.venv/
+
+# مجلدات المحررات
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
